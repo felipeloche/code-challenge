@@ -63,10 +63,10 @@ Implementação de testes automatizados
 
 🎯 Aprendizados
 
-Infraestrutura: Importância da documentação oficial e da compreensão profunda das ferramentas utilizadas
-Docker: Gerenciamento de containers e redes, importância das versões corretas
-ETL: Complexidade do processo de extração e carga de dados, principalmente com múltiplas fontes
-Desenvolvimento: Valor da persistência e da abordagem iterativa na resolução de problemas
+Infraestrutura: Importância da documentação oficial e da compreensão profunda das ferramentas utilizadas  
+Docker: Gerenciamento de containers e redes, importância das versões corretas  
+ETL: Complexidade do processo de extração e carga de dados, principalmente com múltiplas fontes  
+Desenvolvimento: Valor da persistência e da abordagem iterativa na resolução de problemas  
 
 ⚠️ Notas Importantes
 
