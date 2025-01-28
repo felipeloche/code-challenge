@@ -1,0 +1,1 @@
+Storage for extracted data, organized by source type and date.
