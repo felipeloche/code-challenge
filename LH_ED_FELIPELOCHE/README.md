@@ -1,75 +1,78 @@
-# ETL Indicium Challenge - Processo de Desenvolvimento
+# ETL Indicium Challenge - Development Process
 
-## 📝 Contexto do Desafio
-Este projeto foi desenvolvido como parte do desafio da Indicium Tech, focando na criação de um pipeline ETL que integra dados do banco Northwind (PostgreSQL) com informações de pedidos (CSV). O objetivo principal era criar um processo automatizado de extração, transformação e carga de dados usando Apache Airflow e Meltano.
+## 📝 Challenge Context
+This project was developed as part of the Indicium Tech challenge, focusing on creating an ETL pipeline that integrates data from the Northwind database (PostgreSQL) with order information (CSV). The main objective was to create an automated process for data extraction, transformation, and loading using Apache Airflow and Meltano.
 
-## 🛠️ Tecnologias Utilizadas
-- Docker e Docker Compose
+## 🛠️ Technologies Used
+- Docker and Docker Compose
 - Apache Airflow 2.7.3
-- PostgreSQL 13 (Airflow) e 12 (Northwind)
+- PostgreSQL 13 (Airflow) and 12 (Northwind)
 - Python 3.10
-- Meltano (para ETL)
+- Meltano (for ETL)
 
-## 🔄 Processo de Desenvolvimento
+## 🔄 Development Process
 
-### Fase 1: Ambiente e Configuração Inicial
-- Migração do ambiente de desenvolvimento do Windows para Ubuntu para melhor compatibilidade
-- Aprendizado básico de comandos Linux necessários para o projeto
-- Configuração do ambiente Python com venv
+### Phase 1: Environment Setup and Initial Configuration
+- Migrated the development environment from Windows to Ubuntu for better compatibility
+- Acquired basic knowledge of Linux commands required for the project
+- Configured the Python environment with `venv`
 
-### Fase 2: Implementação e Desafios
-- **Primeira Tentativa**: Configuração manual das pastas no Windows
-- **Segunda Tentativa**: Migração para Ubuntu e configuração do Docker
-- **Terceira Tentativa**: Implementação do Airflow usando docker-compose oficial
-- **Quarta Tentativa**: Integração com Meltano e criação de DAGs
-- **Quinta Tentativa**: Refatoração usando Dockerfile personalizado
+### Phase 2: Implementation and Challenges
+- **First Attempt**: Manual folder configuration on Windows
+- **Second Attempt**: Migrated to Ubuntu and configured Docker
+- **Third Attempt**: Implemented Airflow using the official `docker-compose`
+- **Fourth Attempt**: Integrated Meltano and created DAGs
+- **Fifth Attempt**: Refactored with a custom Dockerfile
 
-### Principais Desafios Encontrados
-1. Compatibilidade de versões entre Python, SQLAlchemy e Airflow
-2. Configuração correta dos caminhos para o Meltano
-3. Integração entre diferentes containers Docker
-4. Gerenciamento de dependências no ambiente Docker
+### Key Challenges Encountered
+1. Version compatibility between Python, SQLAlchemy, and Airflow
+2. Correct configuration of paths for Meltano
+3. Integration between different Docker containers
+4. Managing dependencies within the Docker environment
 
-## 🚀 Como Executar (Versão Atual)
+## 🚀 How to Run (Current Version)
 
-### Pré-requisitos
-- Docker e Docker Compose instalados
+### Prerequisites
+- Docker and Docker Compose installed
 - Git
-- Sistema operacional Linux (recomendado)
+- Linux operating system (recommended)
 
-### Instalação
-1. Clone o repositório
-git clone https://github.com/seu-usuario/LH_ED_FELIPELOCHE.git
-cd LH_ED_FELIPELOCHE
-
-2. Configure o ambiente
-echo "AIRFLOW_UID=$(id -u)" > .env
-
-3. Inicie os containers
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-user/LH_ED_FELIPELOCHE.git
+   cd LH_ED_FELIPELOCHE
+   ```
+2. Configure the environment
+	```bash
+	echo "AIRFLOW_UID=$(id -u)" > .env
+	```
+3. Start the containers
+```bash
 docker-compose build --no-cache
 docker-compose up
+```
 
-4. Acesse o Airflow
+4. Access Airflow
+```bash
 URL: http://localhost:8081
-Usuário: admin
-Senha: admin
+Username: admin
+Password: admin
+```
 
-📋 Próximos Passos
+##📋 Next Steps
+Fix the Meltano integration with local files
+Fully implement data transformations
+Optimize the file storage structure
+Implement automated tests
 
-Correção da integração Meltano com arquivos locais
-Implementação completa das transformações de dados
-Otimização da estrutura de armazenamento dos arquivos
-Implementação de testes automatizados
+##🎯 Learnings
+Infrastructure: Importance of official documentation and deep understanding of the tools used  
+Docker: Managing containers and networks, importance of correct versions  
+ETL: Complexity of the data extraction and loading process, especially with multiple sources  
+Development: Value of persistence and iterative problem-solving  
 
-🎯 Aprendizados
-
-Infraestrutura: Importância da documentação oficial e da compreensão profunda das ferramentas utilizadas  
-Docker: Gerenciamento de containers e redes, importância das versões corretas  
-ETL: Complexidade do processo de extração e carga de dados, principalmente com múltiplas fontes  
-Desenvolvimento: Valor da persistência e da abordagem iterativa na resolução de problemas  
-
-⚠️ Notas Importantes
-
-O projeto atual representa uma versão em desenvolvimento
-Algumas funcionalidades ainda precisam ser implementadas/corrigidas
-A integração completa entre Airflow e Meltano está em processo de finalização
+##⚠️ Important Notes
+The current project represents a work-in-progress version
+Some functionalities still need to be implemented/fixed
+The complete integration between Airflow and Meltano is under development
