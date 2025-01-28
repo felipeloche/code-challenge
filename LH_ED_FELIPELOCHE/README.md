@@ -60,19 +60,19 @@ Username: admin
 Password: admin
 ```
 
-##📋 Next Steps
+## 📋 Next Steps
 Fix the Meltano integration with local files
 Fully implement data transformations
 Optimize the file storage structure
 Implement automated tests
 
-##🎯 Learnings
+## 🎯 Learnings
 Infrastructure: Importance of official documentation and deep understanding of the tools used  
 Docker: Managing containers and networks, importance of correct versions  
 ETL: Complexity of the data extraction and loading process, especially with multiple sources  
 Development: Value of persistence and iterative problem-solving  
 
-##⚠️ Important Notes
+## ⚠️ Important Notes
 The current project represents a work-in-progress version
 Some functionalities still need to be implemented/fixed
 The complete integration between Airflow and Meltano is under development
