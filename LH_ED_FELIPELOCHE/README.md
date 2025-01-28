@@ -48,17 +48,17 @@ This project was developed as part of the Indicium Tech challenge, focusing on c
 	echo "AIRFLOW_UID=$(id -u)" > .env
 	```
 3. Start the containers
-```bash
-docker-compose build --no-cache
-docker-compose up
-```
+	```bash
+	docker-compose build --no-cache
+	docker-compose up
+	```
 
 4. Access Airflow
-```bash
-URL: http://localhost:8081
-Username: admin
-Password: admin
-```
+	```bash
+	URL: http://localhost:8081
+	Username: admin
+	Password: admin
+	```
 
 ## 📋 Next Steps
 Fix the Meltano integration with local files
